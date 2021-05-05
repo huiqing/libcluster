@@ -35,7 +35,8 @@ defmodule Cluster.Mixfile do
     [{:ex_doc, "~> 0.20", only: :dev},
      {:dialyxir, "~> 1.0", only: :dev},
      {:exvcr, "~> 0.11", only: :test},
-     {:jason, "~> 1.1"}]
+     {:jason, git: "https://github.com/huiqing/jason.git", branch: "master"}
+     ]
   end
 
   defp package do
