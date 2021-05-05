@@ -28,14 +28,16 @@ defmodule Cluster.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :inets, :jason, :crypto, :ssl]]
+    [applications: [:logger, :inets, :crypto, :ssl]]
+    #  [applications: [:logger, :inets, jason, :crypto, :ssl]]
   end
 
   defp deps do
-    [{:ex_doc, "~> 0.20", only: :dev},
-     {:dialyxir, "~> 1.0", only: :dev},
-     {:exvcr, "~> 0.11", only: :test},
-     {:jason, git: "https://github.com/huiqing/jason.git", branch: "master"}
+    [
+    #{:ex_doc, "~> 0.20", only: :dev},
+    # {:dialyxir, "~> 1.0", only: :dev},
+    # {:exvcr, "~> 0.11", only: :test},
+   #  {:jason, git: "https://github.com/huiqing/jason.git", branch: "master"}
      ]
   end
 
